@@ -1,0 +1,49 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="app.js" defer></script>
+    <title>Challenge</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <img class="logo" src="/img/Logo.png" alt="Logo" />
+      </header>
+
+      <main class="main-content">
+        <section class="input-section">
+          <div>
+            <textarea class="input-text" name="mensaje" id="mensaje" placeholder="Ingrese texto"></textarea>
+            <p class="error-text-input hidden">Debe introducir algún texto</p>
+          </div>
+          <div class="buttons-section">
+            <button onclick="encriptar()" class="button button-encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="button button-desencriptar">Desencriptar</button>
+          </div>
+          
+        </section>
+
+        <section class="output-section">
+          
+            <p class="text-output"></p>
+            
+
+
+          
+          <div class="contenedor-output-section-not-found">
+            <img  src="/img/Muñeco.png" alt="img de resultado" />
+            <p class="titulo-no-encontrado" width="100%">Ningún mensaje fué encontrado</p>
+            <p>Ingrese el texto que desees encriptar o desencriptar</p>
+          </div>
+          
+          <div class="section-copiar">
+            <button class="button" onclick="copiar()" hidden="true">Copiar</button>
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
